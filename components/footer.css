@@ -20,14 +20,13 @@
 
 .footer-nav ul{
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .footer-nav ul ul{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    
+    gap: 1rem;
 }
 
 .footer-nav strong{
