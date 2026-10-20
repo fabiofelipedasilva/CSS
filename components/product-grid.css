@@ -71,29 +71,54 @@
 }
 
 
-@media (max-width:768px) {
-	.grid-section{
+@media (max-width: 900px) {
+	.grid-section {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, auto);
-		grid-template-areas: 
+		grid-template-areas:
 		"highlight highlight"
 		"sneaker-white sneaker-white"
 		"model sneaker-color"
 		"model sneaker-silver"
 		"sneaker-purple sneaker-purple";
-		max-width: 100%;
-		gap: 0.625rem;
+		gap: 16px;
 	}
 
-	.highlight{
+	.highlight {
 		min-height: 500px;
 	}
 
-	.model{
+	.model {
 		min-height: 370px;
 	}
 
-	.sneaker-white, .sneaker-purple{
+	.sneaker-white,
+	.sneaker-purple,
+	.sneaker-color,
+	.sneaker-silver {
 		min-height: 190px;
+	}
+}
+
+@media (max-width: 480px) {
+	.grid-section {
+		grid-template-columns: 1fr;
+		grid-template-rows: none;
+		grid-template-areas:
+			"highlight"
+			"sneaker-white"
+			"model"
+			"sneaker-color"
+			"sneaker-silver"
+			"sneaker-purple";
+		gap: 12px;
+	}
+
+	.highlight {
+		min-height: 420px;
+	}
+
+	.model {
+		min-height: 320px;
 	}
 }
